@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,111 +7,110 @@
 $color1: red;
 $color2: black;
 
+
 header {
 
- background-color: $color2;
+    background-color: $color2;
 
+    h1{
+        color: yellow;
+        font-family: inherit;
+    }
 
     .bloque {
-       display: grid;
+        display: grid;
         height: 10%;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
-       grid-template-rows: 1fr  ;
-    
+        grid-template-rows: 1fr  ;
 
-      .titulo {
-          color: yellow;
-         }
+        .inicio__logo {
+            height: 200px; 
+            width: 200px;
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
 
-      .inicio__logo {
-        height: 200px; 
-        width: 200px;
-        grid-column: 1/2;
-        grid-row: 1/2;
-      }
+        .box {
+            height: 20px;
+            width: 200px;
+            display: block;
+            grid-column: 2/3;
+            grid-row: 1/2;
+            
+            .persona1 {
+                height: 40px;
+                right: 2px;
+                margin-top: -200px;
+                z-index: 2;
+            }
+        
+            .persona1__2 {
+                height: 40px;
+                right: 100px;
+                margin-left: 120px;
+                margin-top: -40px;
+                z-index: 2;
+            }
+            
+            .pelota {
+                height: 20px;
+                width: 20px;
+                margin-top: 100px;
+            }
+        }
 
-
-     .inicio__accesos {
-        grid-column: 3/6; 
-        grid-row: 1/2;   
-         }
+        .inicio__accesos {
+            grid-column: 3/6; 
+            grid-row: 1/2; 
+            font-family: sans-serif;
+        }
      
-     .inicio__accesos1:hover {
-         transform: scale(1.5);
-         }
-     .inicio__accesos2:hover {
-         transform: scale(1.5);
-         }
-     .inicio__accesos3:hover {
-         transform: scale(1.5);
-         }
-     .inicio__accesos4:hover {
-         transform: scale(1.5);
-         }
-     .inicio__accesos5:hover {
-         transform: scale(1.5);
-         }
-     .inicio__accesos6:hover {
-         transform: scale(1.5);
-         }
+        .inicio__accesos1:hover {
+            transform: scale(1.5);
+        }
+
+        .inicio__accesos2:hover {
+            transform: scale(1.5);
+        }
+
+        .inicio__accesos3:hover {
+            transform: scale(1.5);
+        }
+
+        .inicio__accesos4:hover {
+            transform: scale(1.5);
+        }
+
+        .inicio__accesos5:hover {
+            transform: scale(1.5);
+        }
+
+        .inicio__accesos6:hover {
+            transform: scale(1.5);
+        }
      
-     @keyframes agrandar {
-             from {
-             transform: scale(1);
+        @keyframes agrandar {
+            from {
+                transform: scale(1);
              
-             }
+            }
      
-             to {
-             transform: scale(1.5);
-             
-             }
-         }
+            to {
+                transform: scale(1.5);
+            }
+        }
 
-     .inicio__accesos li {
-        display: inline-block;
-        margin: 30px;
-         }
+        .inicio__accesos li {
+            display: inline-block;
+            margin: 30px;
+        }
     
-     .inicio__accesos li a {
-       
-        text-decoration: none;
-        display: inline-block;
-        color: yellow;
-        text-transform: uppercase;
-         }
-    
-    
-      .box {
-        height: 20px;
-        width: 200px;
-        display: block;
-        grid-column: 2/3;
-        grid-row: 1/2;
-        
-         }
-     .persona1 {
-        
-        height: 40px;
-        right: 2px;
-        margin-top: -200px;
-        z-index: 2;
-         }
-     .persona1__2 {
-        
-        height: 40px;
-        right: 100px;
-        margin-left: 120px;
-        margin-top: -40px;
-        z-index: 2;
-         }
-    
-     .pelota {
-       
-        height: 20px;
-        width: 20px;
-       margin-top: 100px;
-         }
-        
+        .inicio__accesos li a {
+            text-decoration: none;
+            display: inline-block;
+            color: yellow;
+            text-transform: uppercase;
+        }
     }
 }
 
@@ -124,31 +123,36 @@ header {
 .principio {
 
     .noticias {
-         background: linear-gradient($color2, $color1);
-    }
+        background: linear-gradient($color2, $color1);
 
-    .titulo2 {
-         color: yellow;
+        .titulo2 {
+            color: yellow;
+        }
+
+        
+        
+        
     }
 
     .noticias__caja {
         height: 80vh;
         display: flex;
+
+        .noticias__texto {
+            color: aliceblue;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 16px;
+            text-align: center;
+            border: 3px solid orange ;
+        }
+    
+        .resultados{
+            display: block;
+            height: 100%; 
+            width: 100%;
+        }
     }
 
-    .noticias__texto {
-        color: aliceblue;
-        width: 50%;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 16px;
-        text-align: center;
-        border: 3px solid orange ;
-    }
-
-    .noticias .resultados{
-        height: 80vh;
-        width: 65%;
-    }
 }
 
 /*tabla de posiciones*/
@@ -157,13 +161,15 @@ header {
     display: grid;
     background-color: $color1;
     place-content: center;
+
+    .tablas img {
+        display: block;
+        height: 700px; 
+        width: 800px;
+    }
 }
 
-.tablas img {
-    display: block;
-    height: 700px; 
-    width: 800px;
-}
+
 
 h3{
     color: yellow;
@@ -179,13 +185,15 @@ h3{
     height: 300px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly       
+    justify-content: space-evenly;     
+    
+    .redes {
+        width: 70px;
+        margin-top: 100px;
+    }
 }
 
-.redes {
-    width: 70px;
-    margin-top: 100px;
-}
+
 
 .formulario {
     width: 50%;
@@ -207,109 +215,133 @@ label{
 /*ajuste de tamaño*/
 @media only screen and (min-width:320px) and (max-width:480px){
     /*footer*/
-    .bloque {
+
+    header .bloque {
         display: grid;
         grid-template-columns: 1fr 1fr ;
         grid-template-rows: 1fr 1fr 1fr ;
     
-    }
+        .box {
+            .pelota{
+                display: none;
+            }
+            .persona1{
+                display: none;
+            }
+            .persona1__2{
+                display: none;
+            }
+        }
 
-    .box {
-        Display: none;
-    }
-
-    .inicio__accesos{
-        display: grid;
-        grid-column: 1/3;
-        grid-row: 2/4;
-    }
-    .inicio__accesos li {
-        margin: 30px;
-    }
+        .inicio__accesos{
+            display: grid;
+            grid-column: 1/3;
+            grid-row: 2/4;
+        }
+        .inicio__accesos li {
+            margin: 30px;
+        }
+        
+        .inicio__accesos li a {
+            text-decoration: none;
+            color: yellow;
+            text-transform: uppercase;
+        }
     
-    .inicio__accesos li a {
-        text-decoration: none;
-        color: yellow;
-        text-transform: uppercase;
+        .inicio__accesos1 {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            }
+        .inicio__accesos2 {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            }
+        .inicio__accesos3 {
+            grid-column: 1/2;
+            grid-row: 3/4;      
+            }
+        .inicio__accesos4 {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            }
+        .inicio__accesos5 {
+            grid-column: 2/3;
+            grid-row: 2/3;
+            }
+        .inicio__accesos6 {
+            grid-column: 2/3;
+            grid-row: 3/4;
+            }
     }
 
-    .inicio__accesos1 {
-       grid-column: 1/2;
-       grid-row: 1/2;
-        }
-    .inicio__accesos2 {
-        grid-column: 1/2;
-        grid-row: 2/3;
-        }
-    .inicio__accesos3 {
-        grid-column: 1/2;
-        grid-row: 3/4;      
-        }
-    .inicio__accesos4 {
-        grid-column: 2/3;
-        grid-row: 1/2;
-        }
-    .inicio__accesos5 {
-        grid-column: 2/3;
-        grid-row: 2/3;
-        }
-    .inicio__accesos6 {
-        grid-column: 2/3;
-        grid-row: 3/4;
-        }
+   
+
+    
 
 
+
+
+    /*noticias y resultados*/
+
+    .principio .noticias__caja {
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-wrap: wrap; 
+
+        .principio .noticias__texto {
+            color: aliceblue;
+            width: 100%;
+            height: auto;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 16px;  
+        }
+    }
+
+
+
+    .principio .noticias .resultados{
+        display: block;
+        height: 100%; 
+        width: 100%;
+        object-fit: cover
+            
+    }
+
+    /*tabla de resultados*/
     .tablas img {
         display: block;
         height: 100%; 
         width: 100%;
-            
-        }
-
-        /*noticias y resultados*/
-
-    .noticias__caja {
-        height: 80vh;
-        display: flex;
-        flex-wrap: wrap; 
+        object-fit: cover
     }
 
-    .noticias__texto {
-        color: aliceblue;
-        width: 100%;
-       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-       font-size: 11px;
-       
-       
-    }
 
-    .noticias .resultados{
-        height: 66vh;
-        width: 100%;
-        place-content: center;
-    }
-        /*footer*/
+
+    /*footer*/
     .footer {
         background: linear-gradient($color1 ,$color2);
         height: 400px;
         display: flex;
         flex-direction: column;
-        }
-
-} 
-@media only screen and (min-width: 480px) and (max-width: 800px)
-{
-
-    .bloque {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr ;
     }
-        .inicio__accesos{
-            display: grid;
-            grid-column: 1/3;
-            grid-row: 2/3;
-        }
+} 
+
+
+@media only screen and (min-width: 480px) and (max-width: 800px){
+
+    header .bloque {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr ;
+    }
+
+    
+    header .bloque .inicio__accesos{
+        display: grid;
+        grid-column: 1/3;
+        grid-row: 2/4;
+    }
  
     .inicio__accesos li {
         margin: 30px;
@@ -324,56 +356,59 @@ label{
     .inicio__accesos1 {
        grid-column: 1/2;
        grid-row: 1/2;
-        }
+    }
     .inicio__accesos2 {
         grid-column: 1/2;
         grid-row: 2/3;
-        }
+    }
     .inicio__accesos3 {
         grid-column: 1/2;
         grid-row: 3/4;      
-        }
+    }
     .inicio__accesos4 {
         grid-column: 2/3;
         grid-row: 1/2;
-        }
+    }
     .inicio__accesos5 {
         grid-column: 2/3;
         grid-row: 2/3;
-        }
+    }
     .inicio__accesos6 {
         grid-column: 2/3;
         grid-row: 3/4;
-        }
+    }
 
+
+
+
+
+    .principio .noticias__caja {
+        height: auto;
+        width: auto ;
+        display: flex;
+        flex-wrap: wrap; 
+    }
+
+    .principio .noticias__texto {
+        color: aliceblue;
+        width: 100%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 14px;
+        border: 3px solid orange ;  
+    }
+
+    .principio .noticias .resultados{
+        display: block;
+        height: 100%; 
+        width: 100%;
+        object-fit: cover
+    }
+    
 
     .tablas img {
         display: block;
         height: 100%; 
         width: 100%;
-            
-        }
-
-
-    .noticias__caja {
-        height: 80vh;
-        display: flex;
-        flex-wrap: wrap; 
-    }
-
-    .noticias__texto {
-        color: aliceblue;
-        width: 100%;
-       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-       font-size: 14px;
-       border: 3px solid orange ;
-       
-    }
-
-    .noticias .resultados{
-        height: 60vh;
-        width: 100%;
-        place-content: center;
     }
 
     .footer {
@@ -382,5 +417,54 @@ label{
         display: flex;
         flex-direction: column;
         align-content: space-around;
-        justify-content: flex-start;}
+        justify-content: flex-start;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1151px){
+    
+    .noticias__caja {
+        height: 88vh;
+        display: flex;
+    }
+    
+    .principio .noticias__caja {
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-wrap: wrap; 
+
+        .principio .noticias__texto {
+            color: aliceblue;
+            width: 100%;
+            height: auto;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 16px;  
+        }
+    }
+
+
+
+    .principio .noticias .resultados{
+        display: block;
+        height: 100%; 
+        width: 100%;
+        object-fit: cover
+    }
+
+}
+
+.fotoDeTodos{
+
+    h2{
+        text-align: center;
+        font-size: 45px; 
+    }
+
+    background-color: red;
+    height: 500px;
+    background-image: url(../imagenes/to.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
