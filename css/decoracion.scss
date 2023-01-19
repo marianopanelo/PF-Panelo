@@ -216,12 +216,17 @@ label{
 @media only screen and (min-width:320px) and (max-width:480px){
     /*footer*/
 
+   
+    
+
     header .bloque {
         display: grid;
         grid-template-columns: 1fr 1fr ;
         grid-template-rows: 1fr 1fr 1fr ;
     
         .box {
+            display: none;
+
             .pelota{
                 display: none;
             }
@@ -237,15 +242,18 @@ label{
             display: grid;
             grid-column: 1/3;
             grid-row: 2/4;
+            
         }
-        .inicio__accesos li {
-            margin: 30px;
+        
+        .inicio__accesos li{
+            margin: 0;
         }
         
         .inicio__accesos li a {
             text-decoration: none;
             color: yellow;
             text-transform: uppercase;
+            
         }
     
         .inicio__accesos1 {
