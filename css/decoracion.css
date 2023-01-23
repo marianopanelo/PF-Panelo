@@ -255,9 +255,19 @@ label {
   /*footer*/
   .footer {
     background: linear-gradient(red, black);
-    height: 400px;
+    height: auto;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .footer .redes {
+    width: 70px;
+  }
+  data-aos {
+    display: none;
+  }
+  data-aos-duration {
+    display: none;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 800px) {

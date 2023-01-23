@@ -329,9 +329,21 @@ label{
     /*footer*/
     .footer {
         background: linear-gradient($color1 ,$color2);
-        height: 400px;
+        height: auto;
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;     
+        
+        .redes {
+            width: 70px;
+        }
+    }
+
+    data-aos{
+        display: none;
+    }
+    data-aos-duration{
+        display: none;
     }
 } 
 
