@@ -192,7 +192,7 @@ label {
     grid-row: 2/4;
   }
   header .bloque .inicio__accesos li {
-    margin: 0;
+    margin: 5;
   }
   header .bloque .inicio__accesos li a {
     text-decoration: none;
